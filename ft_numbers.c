@@ -19,9 +19,9 @@ int	ft_putunbr(unsigned int n)
 }
 int	ft_puthex(unsigned int n, char type)
 {
-    (void)n;
-    (void)type;
-    return (0);
+    
+	ft_puthex_print(n, type);
+	return (ft_lenhex(n));
 }
 int	ft_putptr(unsigned long n)
 {
