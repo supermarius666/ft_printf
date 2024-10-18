@@ -6,7 +6,7 @@
 
 
 int	ft_printf(const char *format, ...);
-int	ft_formater(char type, va_list ap);
+int	ft_formatter(char type, va_list ap);
 int ft_putchar(char c);
 int ft_putstr(char *str);
 int	ft_putnbr(int n);

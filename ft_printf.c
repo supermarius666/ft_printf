@@ -14,7 +14,7 @@ int ft_printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			count += ft_formater(format[i + 1], ap);
+			count += ft_formatter(format[i + 1], ap);
 			i++;
 		}
 		else
@@ -25,7 +25,7 @@ int ft_printf(const char *format, ...)
 	return (count);
 }
 
-int	ft_formater(char type, va_list ap)
+int	ft_formatter(char type, va_list ap)
 {
 	if (type == 'c')
 		return (ft_putchar(va_arg(ap, int)));
