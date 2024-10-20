@@ -14,17 +14,19 @@ int	ft_putnbr(int n)
 }
 int	ft_putunbr(unsigned int n)
 {
-    (void)n;
-    return (0);
+	ft_unbr_print(n);
+   	return (ft_lenunbr(n));
 }
 int	ft_puthex(unsigned int n, char type)
 {
-    
-	ft_puthex_print(n, type);
+	ft_hex_print(n, type);
 	return (ft_lenhex(n));
 }
 int	ft_putptr(unsigned long n)
 {
-    (void)n;
-    return (0);
+	if (!n)
+		return (ft_putstr("(nil)"));
+    ft_putstr_fd("0x", 1);
+	ft_ptr_print(n);
+	return (ft_lenptr(n) + 2);
 }
