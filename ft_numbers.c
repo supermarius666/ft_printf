@@ -12,16 +12,19 @@ int	ft_putnbr(int n)
 	free(nbr);
 	return (count);
 }
+
 int	ft_putunbr(unsigned int n)
 {
 	ft_unbr_print(n);
    	return (ft_lenunbr(n));
 }
+
 int	ft_puthex(unsigned int n, char type)
 {
 	ft_hex_print(n, type);
 	return (ft_lenhex(n));
 }
+
 int	ft_putptr(unsigned long n)
 {
 	if (!n)
